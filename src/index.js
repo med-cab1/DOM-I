@@ -38,5 +38,30 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "accent-img": "http://localhost:9000/img/accent.png",
   },
 };
+// images
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = siteContent.images['logo-img']
+
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent.images['cta-img']
+
+const midImg = document.querySelector('#middle-img')
+midImg.setAttribute('src', siteContent.images['accent-img'])
+
+
+// Top Content
+const h4 = document.querySelectorAll("h4");
+h4[0].textContent = siteContent["main-content"]["features-h4"];
+h4[1].textContent = siteContent["main-content"]["about-h4"];
+h4[2].textContent = siteContent["main-content"]["services-h4"];
+h4[3].textContent = siteContent["main-content"]["product-h4"];
+h4[4].textContent = siteContent["main-content"]["vision-h4"];
+h4[5].textContent = siteContent["contact"]["contact-h4"];
+
+
+
+// Bottom Content
+
+
 
 console.log('project wired!')
